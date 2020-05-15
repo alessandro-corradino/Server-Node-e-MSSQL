@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
     this.obsGeoData = this.http.get<GeoFeatureCollection>("https://3000-cd71fdb2-b6a4-4029-8b07-b0a953ec0782.ws-eu01.gitpod.io/ci_vettore/90");
     this.obsGeoData.subscribe(this.prepareData);
     //Effettua la chiamatata al server per ottenere l’elenco dei vettori energetici
-    this.obsCiVett = this.http.get<Ci_vettore[]>("https://3000-cd71fdb2-b6a4-4029-8b07-b0a953ec0782.ws-eu01.gitpod.io/ci_vettore/108");
+    this.obsCiVett = this.http.get<Ci_vettore[]>("https://3000-cd71fdb2-b6a4-4029-8b07-b0a953ec0782.ws-eu01.gitpod.io/ci_vettore/436");
     this.obsCiVett.subscribe(this.prepareCiVettData);
   }
 

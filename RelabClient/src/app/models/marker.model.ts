@@ -6,53 +6,53 @@ export class Marker {
    //l’etichetta
     constructor(public lat: number, public lng: number, public label?: string)
     {
-        if (this.label.includes("Gas")) {
-            this.icon = { url: './assets/img/gas.ico' };
+        if (this.label.includes("naturale")) {
+            this.icon = { url: './assets/img/gas-32.ico' };
              this.label = "";
         }
         if(this.label.includes("elettrica"))
         {
-            this.icon = { url: './assets/img/electricity.ico' };
+            this.icon = { url: './assets/img/electricity-32.ico' };
              this.label = "";
         }
-        if(this.label.includes(""))
+        if(this.label.includes("solide"))
         {
-            this.icon = { url: './assets/img/tree.ico' };
+            this.icon = { url: './assets/img/tree-50-32.ico' };
              this.label = "";
         }
-        if(this.label.includes(""))
+        if(this.label.includes("Olio"))
         {
-            this.icon = { url: './assets/img/water.ico' };
+            this.icon = { url: './assets/img/water-32.ico' };
              this.label = "";
         }
-        if(this.label.includes(""))
+        if(this.label.includes("Teleriscaldamento"))
         {
-            this.icon = { url: './assets/img/power.ico' };
+            this.icon = { url: './assets/img/power-32.ico' };
              this.label = "";
         }
-        if(this.label.includes(""))
+        if(this.label.includes("RSU"))
         {
-            this.icon = { url: './assets/img/battery.ico' };
+            this.icon = { url: './assets/img/trash-9-32.ico' };
              this.label = "";
         }
-        if(this.label.includes(""))
+        if(this.label.includes("liquide"))
         {
-            this.icon = { url: './assets/img/toxic.ico' };
+            this.icon = { url: './assets/img/toxic-32.ico' };
              this.label = "";
         }
-        if(this.label.includes(""))
+        if(this.label.includes("NULL"))
         {
-            this.icon = { url: './assets/img/qm.ico' };
+            this.icon = { url: './assets/img/question-mark-32.ico' };
              this.label = "";
         }
-        if(this.label.includes(""))
+        if(this.label.includes("GPL"))
         {
-            this.icon = { url: './assets/img/warning.ico' };
+            this.icon = { url: './assets/img/gas-pump-32.ico' };
              this.label = "";
         }
-        if(this.label.includes(""))
+        if(this.label.includes("Gasolio"))
         {
-            this.icon = { url: './assets/img/filter.ico' };
+            this.icon = { url: './assets/img/warning-22-32.ico' };
              this.label = "";
         }
     }
