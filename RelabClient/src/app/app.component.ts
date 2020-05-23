@@ -66,7 +66,7 @@ ngOnInit() {
   cambiaFoglio(foglio) : boolean
   {
     let val = foglio.value; //Commenta qui: creiamo variabile val che assume il valore del foglio specificato nella label
-    this.obsCiVett = this.http.get<Ci_vettore[]>(`https://3000-cd71fdb2-b6a4-4029-8b07-b0a953ec0782.ws-eu01.gitpod.io/ci_vettore/${val}`);  //Commenta qui
+    this.obsCiVett = this.http.get<Ci_vettore[]>(`https://3000-cd71fdb2-b6a4-4029-8b07-b0a953ec0782.ws-eu01.gitpod.io/ci_vettore/${val}`);  //Commenta qui: facciamo una richiesta http.get al server
     this.obsCiVett.subscribe(this.prepareCiVettData); //Commenta qui: qui ci "sottoscriviamo e quando arrivano i dati viene lanciato il metodo prepareCiVettData"
     console.log(val);
     return false;
@@ -118,7 +118,7 @@ circleDoubleClicked(circleCenter)
     //Posso riusare lo stesso observable e lo stesso metodo di gestione del metodo
     //cambiaFoglio poichè riceverò lo stesso tipo di dati
     //Divido l'url andando a capo per questioni di leggibilità non perchè sia necessario
-        this.obsCiVett = this.http.get<Ci_vettore[]>(`http://TUO_URL/ci_geovettore/
+        this.obsCiVett = this.http.get<Ci_vettore[]>(`https://3000-cd71fdb2-b6a4-4029-8b07-b0a953ec0782.ws-eu01.gitpod.io/ci_geovettore/
         ${this.circleLat}/
         ${this.circleLng}/
         ${raggioInGradi}`);
