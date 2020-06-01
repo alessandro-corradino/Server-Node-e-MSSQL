@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   circleLng: number = 0;
   maxRadius: number = 400; //Voglio evitare raggi troppo grossi
   radius : number = this.maxRadius; //Memorizzo il raggio del cerchio
-  serverUrl : string = "https://3000-cd71fdb2-b6a4-4029-8b07-b0a953ec0782.ws-eu01.gitpod.io/";
+  serverUrl : string = "https://3000-cd71fdb2-b6a4-4029-8b07-b0a953ec0782.ws-eu01.gitpod.io";
 
   constructor(public http: HttpClient) {
   }
@@ -76,9 +76,10 @@ ngOnInit() {
 
 
   styleFunc = (feature) => {
+    console.log(feature);
     return ({
       clickable: false,
-      fillColor: this.avgColorMap(feature.i.media),
+      fillColor: this.avgColorMap(feature.j.media),
       strokeWeight: 1,
       fillOpacity : 1  //Fill opacity 1 = opaco (i numeri tra 0 e 1 sono le gradazioni di trasparenza)
     });
